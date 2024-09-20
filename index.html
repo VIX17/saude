@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde e Cuidados Pessoais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Saúde e Cuidados Pessoais</h1>
+        <p>A saúde é o maior bem que possuímos. Cuidar da saúde não é apenas prevenir doenças, mas viver de maneira equilibrada, com boa alimentação, exercícios regulares e atenção ao bem-estar mental.</p>
+    </header>
+
+    <nav>
+        <button class="menu-toggle">☰ Menu</button>
+        <ul class="menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#alimentacao">Alimentação</a></li>
+            <li><a href="#exercicios">Exercícios</a></li>
+            <li><a href="#saude-mental">Saúde Mental</a></li>
+            <li><a href="#imc">Calculadora de IMC</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <h2>Cuidados com a Saúde</h2>
+        <p>Cuidar da saúde envolve várias áreas, desde manter uma alimentação equilibrada até praticar atividades físicas regularmente. O cuidado com a saúde mental também é essencial para um bem-estar completo.</p>
+        <ul>
+            <li>Alimentação balanceada é a chave para uma vida saudável. Manter o equilíbrio entre os nutrientes é fundamental para o funcionamento do corpo.</li>
+            <li>Exercícios físicos regulares ajudam a melhorar o humor, aumentar a energia e prevenir doenças crônicas.</li>
+            <li>A saúde mental não pode ser negligenciada. Técnicas de meditação e gerenciamento de estresse são importantes para o bem-estar emocional.</li>
+        </ul>
+        <p>Para saber mais sobre cuidados com a saúde, confira <a href="https://www.who.int/news-room/fact-sheets/detail/health-topics" target="_blank">essa página da OMS</a>.</p>
+    </section>
+
+    <section id="alimentacao" class="hidden">
+        <h2>Alimentação Saudável</h2>
+        <p>Uma alimentação saudável é fundamental para manter o corpo funcionando corretamente. Aqui estão algumas dicas:</p>
+        <ul>
+            <li>Coma mais frutas e vegetais ricos em vitaminas, minerais e fibras.</li>
+            <li>Opte por cereais integrais ao invés de refinados, como arroz integral e aveia.</li>
+            <li>Reduza o consumo de açúcares adicionados e alimentos processados.</li>
+            <li>Beba pelo menos 2 litros de água por dia.</li>
+        </ul>
+        <p>Para mais informações sobre alimentação saudável, confira os links abaixo:</p>
+        <ul>
+            <li><a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank">Dieta Saudável - OMS</a></li>
+            <li><a href="https://www.healthline.com/nutrition/healthy-eating-tips" target="_blank">Dicas de Alimentação Saudável - Healthline</a></li>
+            <li><a href="https://www.nutrition.gov/" target="_blank">Nutrition.gov - Dicas e Recursos</a></li>
+        </ul>
+    </section>
+
+    <section id="exercicios" class="hidden">
+        <h2>Exercícios Físicos</h2>
+        <p>Exercícios são essenciais para manter o corpo saudável e melhorar a qualidade de vida. Aqui estão algumas atividades físicas que você pode adotar:</p>
+        <ul>
+            <li><strong>Caminhada:</strong> Uma das formas mais simples e eficazes de se manter ativo. Ideal para iniciantes.</li>
+            <li><strong>Musculação:</strong> Ajuda a fortalecer os músculos e melhorar a resistência física.</li>
+            <li><strong>Yoga:</strong> Excelente para promover flexibilidade, equilíbrio e bem-estar mental.</li>
+            <li><strong>Corrida:</strong> Para os mais avançados, a corrida melhora o condicionamento cardiovascular.</li>
+        </ul>
+        <p>O exercício regular ajuda a controlar o peso, melhorar a saúde do coração e fortalecer o sistema imunológico.</p>
+        <p>Para saber mais sobre a importância dos exercícios, veja <a href="https://www.cdc.gov/physicalactivity/basics/pa-health/index.htm" target="_blank">essa página do CDC</a>.</p>
+    </section>
+
+    <section id="saude-mental" class="hidden">
+        <h2>Saúde Mental</h2>
+        <p>A saúde mental é tão importante quanto a física. Aqui estão algumas estratégias para promover o bem-estar emocional:</p>
+        <ul>
+            <li><strong>Meditação:</strong> Técnicas de respiração e mindfulness podem reduzir o estresse e melhorar o foco.</li>
+            <li><strong>Gerenciamento de Estresse:</strong> Identifique os fatores de estresse e adote técnicas para lidar com eles, como pausas regulares e atividades de lazer.</li>
+            <li><strong>Conexões Sociais:</strong> Manter contato com amigos e familiares é vital para a saúde emocional.</li>
+            <li><strong>Autocuidado:</strong> Separe um tempo para você, fazendo atividades que tragam alegria e relaxamento.</li>
+        </ul>
+        <p>Para mais informações sobre saúde mental, acesse <a href="https://www.nami.org/Home" target="_blank">NAMI - National Alliance on Mental Illness</a>.</p>
+    </section>
+
+    <section id="imc" class="hidden">
+        <h2>Calculadora de IMC</h2>
+        <form id="imc-form">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" name="peso" required>
+            <label for="altura">Altura (m):</label>
+            <input type="number" step="0.01" id="altura" name="altura" required>
+            <button type="submit">Calcular IMC</button>
+        </form>
+        <p id="resultado"></p>
+        <p>Saiba mais sobre o IMC e sua importância em <a href="https://www.who.int/news-room/fact-sheets/detail/body-mass-index-(bmi)" target="_blank">essa página da OMS</a>.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #2c8c4a;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Estilo do menu */
+nav {
+    background-color: #28a745;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #1e6f36;
+    border-radius: 5px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+section {
+    display: none;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animação de visibilidade */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Estilos específicos para a calculadora de IMC */
+#imc {
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#imc:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#imc-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#imc-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+#imc-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#imc-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#imc-form button:hover {
+    background-color: #218838;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+    }
+}
+
